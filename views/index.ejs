@@ -9,25 +9,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Signika+Negative&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>URl </title>
-    <style>
-        body{
-            background-color:black;
-            font-family: 'Josefin Sans', sans-serif;
-font-family: 'Signika Negative', sans-serif;
-        }
-        h1{
-            text-align:center;
-            color:white;
-            font-weight: 500;
-
-        }
-    </style>
+<link rel="stylesheet" href="css/style.css">
+    <title>URl Shrinker</title>
 </head>
 <body>
     <div class="container">
-         <h1>URL Shrinker!</h1>
+         <h1 style="color:aqua;font-weight:bold">URL Shrinker!</h1>
         <form action="/shortURL" class="form-inline" method="post">  
               <input required type="url" class="form-control col mb-2" id="fullUrl" name="fullUrl" placeholder="Enter a url" >
               <button type="submit" class="btn btn-primary mb-5">Shrink</button>   
@@ -36,6 +25,7 @@ font-family: 'Signika Negative', sans-serif;
 <table class="table table-dark table-responsive">
     <thead >
         <tr>
+            <th> </th>
             <th>Full URL </th>
             <th>Short URL</th>
             <th>Clicks</th>
@@ -44,8 +34,12 @@ font-family: 'Signika Negative', sans-serif;
     <tbody>
         <!--element will the single document of the urls collection-->
           <%urls.forEach((element)=>{%>
+            
             <tr>
-                <td><a href="<%=element.full %>" target="_blank"><%=element.full %></a></td>
+                <td>
+                <a href="/delete/<%=element._id%>"> <i class="fa fa-trash-o" style="font-size:31px;color:rgb(235, 46, 46);"></i> </a>
+                </td>
+                <td> <a href="<%=element.full %>" target="_blank"><%=element.full %></a></td>
                 <td><a href="<%=element.short %>" target="_blank"><%=element.short %></a></td>
                 <td><%=element.clicks %></td>
             </tr>
@@ -57,7 +51,25 @@ font-family: 'Signika Negative', sans-serif;
     </tbody>
 
 </table>
-<div class="container">
+</div>
+<div class="container"> 
+    
+  <div class="content-para"> 
+    <h1 style="color:black;font-weight:bold;text-align: left;margin-top: 5vh;">Simple and fast URL Shrinker!</h1>
+     URL Shrinker allows to shorten long links from Instagram, Facebook, YouTube, Twitter, Linked In, WhatsApp, TikTok, blogs and sites. Just paste the long URL and click the Shrink button. Copy the shortened URL and share it on sites, chat and emails. After shortening the URL, check how many clicks it received. </div>
+    </div>
 
+    <div class="footer">  
+    <p> Made with ❤️ by Abhiyodaya Pandey </p>
+    <p > <span>Connect me on:</span>
+         
+        <a href="https://www.instagram.com/_pandey_7169" target="_blank" id="link1" class="link"> <i class="fa fa-instagram" > </i></a>
+        <a href="https://www.facebook.com/abhiyodaya.pandey.3" target="_blank" class="link"> <i class="fa fa-facebook" > </i></a>
+        <a href="https://www.linkedin.com/in/abhiyodaya-pandey-1834831b1" target="_blank" class="link"> <i class="fa fa-linkedin" > </i></a>
+        <a href="https://twitter.com/AbhiyodayaP?t=SSASkgeTr5cJnpDfHS5ohQ&s=08" target="_blank" class="link"> <i class="fa fa-twitter" ></i> </a>
+        <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="link" style="margin-left:7px;"> <i class="fa fa-envelope" ></i> </a>
+    </p>
+
+</div>
 </body>
 </html>

@@ -7,7 +7,7 @@ const app=express();
 app.set("view engine","ejs");
 //app.use(express.urlencoded({extended:false}));
 app.use(bodyParser.urlencoded({extended:true}));
-
+app.use(express.static("public"));
 mongoose.connect("mongodb+srv://abhiyodaya2002:pandey150402@cluster0.yii2q.mongodb.net/urldb");
 
 const urlschema=new mongoose.Schema({
@@ -66,7 +66,13 @@ app.get("/:newurl", async(req,res)=>{
     res.send("Error 404! Requesting page not found ");
    }
 })
+app.get("/delete/:newp", async(req,res)=>{
 
+    var reqId=req.params.newp;
+    await url.deleteOne({_id: reqId});
+ 
+    res.redirect("/");
+ })
 app.listen(process.env.PORT||3000,()=>{
     console.log("server running at port 3000");
 })
