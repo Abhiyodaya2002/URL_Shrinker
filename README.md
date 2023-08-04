@@ -1,6 +1,6 @@
 # URL Shrinker
 
-URL Shrinker is a backend Node.js project, built using Express.js framework that shortens long URLs into compact and shareable links. It provides a simple API for generating unique short URLs, allowing users to easily share and track their usage. The application is designed to be scalable, user-friendly, and customizable, making it an effective solution for managing and simplifying URLs in various scenarios.
+URL Shrinker is a Node.js backend project that uses the Express.js framework to compress and share lengthy URLs. It provides a simple API for generating unique short URLs, allowing users to easily share and track their usage. The application is designed to be scalable, user-friendly, and customizable, making it an effective solution for managing and simplifying URLs in various scenarios.
 
 ## Live-Demo
 
@@ -34,10 +34,5 @@ The URL Shrinker backend follows a simple and scalable architecture, leveraging 
 
 To ensure unique and random short IDs for the shortened URLs, the project uses the ShortId library. The design is kept stateless to facilitate easy scalability and deployment in distributed environments.
 
-## Design
-
-The app's design is modern and user-friendly, with an emphasis on simplicity and ease of use. With a black background and basic font, the app has a clean and minimalist style. The web application also employs concise and clear language, with simple labeling and instructions.
-
-The Home screen offers a list of food products, as well as a search bar and settings for the number of items to be ordered. The Home screen displays the menu's items and allows the user to add them to their cart. The Cart page displays the user's cart contents and allows the user to place an order. The Order screen displays the user's order information.
 
 
