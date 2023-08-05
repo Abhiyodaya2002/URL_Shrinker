@@ -1,10 +1,10 @@
-# URL Shrinker
+# URL Shrinker using Node.js
 
 URL Shrinker is a Node.js backend project that uses the Express.js framework to compress and share lengthy URLs. It provides a simple API for generating unique short URLs, allowing users to easily share and track their usage. The application is designed to be scalable, user-friendly, and customizable, making it an effective solution for managing and simplifying URLs in various scenarios.
 
 ## Live-Demo
 
-<a href="https://www.youtube.com/watch?v=XVDuomkMOgM">https://www.youtube.com/watch?v=XVDuomkMOgM</a>
+<a href="https://youtu.be/9OAqkgvipG8">https://youtu.be/9OAqkgvipG8</a>
 
 
 ## Technologies
