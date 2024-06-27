@@ -1,6 +1,6 @@
 body{
             
-    background-image: url("/images/backgroudn.jpg");
+    background-image: url("/images/image1.jpg");
     background-position: center; /* Center the image */
 background-size: cover; /* Resize the background image to cover the entire container */
     font-family: 'Josefin Sans', sans-serif;
